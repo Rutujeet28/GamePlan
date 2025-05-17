@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="25dp">
+
+    <include
+        android:id="@+id/app_header"
+        layout="@layout/app_header"
+        android:layout_width="411dp"
+        android:layout_height="63dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/logout"
+        android:layout_width="40dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/img_2"
+        app:layout_constraintBottom_toBottomOf="@+id/app_header"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.307" />
+
+    <Button
+        android:id="@+id/home_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="316dp"
+        android:background="@drawable/button_shape"
+        android:clickable="true"
+        android:text="Home"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Text displaying UserID -->
+
+    <!-- EditText textbox -->
+
+    <!-- Event Time EditText -->
+
+    <!-- Modify Option TextView -->
+
+
+    <EditText
+        android:id="@+id/select_userID"
+        android:layout_width="147dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/button_gradient"
+        android:hint="Select UserID"
+        android:inputType="time"
+        android:padding="16dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editSelectDate" />
+
+    <EditText
+        android:id="@+id/user_post"
+        android:layout_width="358dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="User Post"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/select_userID" />
+
+    <EditText
+        android:id="@+id/adminModification"
+        android:layout_width="358dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="Admin Modification"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/app_header" />
+
+
+    <EditText
+        android:id="@+id/editSelectDate"
+        android:layout_width="153dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/button_gradient"
+        android:hint="Select Date"
+        android:inputType="time"
+        android:padding="16dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/adminModification" />
+
+    <EditText
+        android:id="@+id/editTextPostFrom"
+        android:layout_width="140dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="184dp"
+        android:background="@drawable/button_gradient"
+        android:hint="Posts From"
+        android:inputType="time"
+        android:padding="16dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.173"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editSelectDate" />
+
+
+    <TextView
+        android:id="@+id/delete_text_label"
+        android:layout_width="69dp"
+        android:layout_height="20dp"
+        android:text="Delete"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextPostTill"
+        app:layout_constraintVertical_bias="0.245" />
+
+    <EditText
+        android:id="@+id/editTextPostTill"
+        android:layout_width="140dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="248dp"
+        android:background="@drawable/button_gradient"
+        android:hint="Posts Till"
+        android:inputType="time"
+        android:padding="16dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.892"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/delete_icon"
+        android:layout_width="37dp"
+        android:layout_height="29dp"
+        android:layout_marginBottom="172dp"
+        android:src="@drawable/delete"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.548"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

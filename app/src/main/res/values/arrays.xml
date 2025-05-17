@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="event_types">
+        <item>Badminton</item>
+        <item>Tennis</item>
+        <item>Squash</item>
+        <!-- Add other event types as needed -->
+    </string-array>
+    <string-array name="locations">
+        <item>1st Floor Courts</item>
+        <item>2nd Floor Courts</item>
+        <item>Outdoor Courts</item>
+    </string-array>
+
+</resources>

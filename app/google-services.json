@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "118048604758",
+    "firebase_url": "https://gameplan-b051f-default-rtdb.firebaseio.com",
+    "project_id": "gameplan-b051f",
+    "storage_bucket": "gameplan-b051f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:118048604758:android:db770abcb4945506eff1f7",
+        "android_client_info": {
+          "package_name": "com.example.gameplan"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAV-05CiRZxCKRzVgl1a7e2WDeJurATUz0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
